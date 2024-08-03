@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Terms and Conditions - Programmer Team</title>
+  <style>
+    /* Additional styles for the terms and conditions page */
+    .terms-conditions {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .terms-conditions h1 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #007BFF;
+    }
+
+    .terms-conditions h2 {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      color: #0056b3;
+    }
+
+    .terms-conditions p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .terms-conditions ul {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+    }
+
+    .terms-conditions li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Component -->
+  <header id="header"></header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="terms-conditions">
+      <h1>Terms and Conditions</h1>
+      <p>Welcome to codetech. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.</p>
+
+      <h2>1. Introduction</h2>
+      <p>These Terms and Conditions govern your use of our website. By accessing or using our website, you agree to these terms in full. If you do not agree with any part of these terms, you must not use our website.</p>
+
+      <h2>2. Use of the Website</h2>
+      <p>You must use our website in accordance with applicable laws and regulations. You may not use our website for any unlawful purpose or in a way that could damage or impair its functionality.</p>
+ 
+      <h2>3. User Content</h2>
+      <p>Any content you submit to our website must not violate the rights of any third party and must not be illegal or offensive. We reserve the right to remove any content that breaches these terms.</p>
+ 
+      <h2>4. Changes to Terms</h2>
+      <p>We may update these terms from time to time. Any changes will be posted on this page, and your continued use of our website constitutes acceptance of the updated terms.</p>
+
+       
+      <h2>5. Contact Us</h2>
+      <p>If you have any questions about these terms and conditions, please contact us through our <a href="contact.html">Contact Us</a> page.</p>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer id="footer"></footer>
+
+  <!-- JavaScript to Include Header and Footer -->
+  <script>
+    fetch('components/header.html')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('header').innerHTML = text;
+      });
+
+    fetch('components/footer.html')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('footer').innerHTML = text;
+      });
+  </script>
+</body>
+</html>

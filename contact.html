@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Contact Us - Programmer Team</title>
+  <style>
+
+
+
+
+
+    /* Additional styles for the contact form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px solid #000000;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.445);
+    }
+
+    .contact-form h1 {
+      margin-bottom: 10px;
+      font-size: 25px;
+      color: #007BFF;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 17px;
+      
+      
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 80%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #00000071;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    /* .contact-form button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+    } */
+
+  
+
+    .contact-info {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      font-size: 1.5rem;
+      color: #007BFF;
+    }
+
+
+
+  
+    
+    .btn_to_send_email{
+    margin-top: 20px;
+    justify-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid #000000 ;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
+    transition: all 0.2s;
+    }
+
+
+    .btn_to_send_email:hover{
+
+    border: 3px solid #0629c7 ;
+    background-color: #0629c7;
+    color: #ffffff;
+    /* font-weight: 800; */
+    width: 230px;
+    height: 55px;
+    box-shadow: 10px 10px 10px rgba(11, 41, 211, 0.541);
+
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Component -->
+  <header id="header"></header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h1>Contact Us</h1>
+      <p>If you have any questions or would like to get in touch with us, please fill out the form below or use the contact information provided.</p>
+
+      <div class="contact-form">
+        <h1>Contact Form</h1>
+        <br><br>
+        <form  action="mailto:your-email@example.com" method="post" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button name="btn_to_send_email" id="btn_to_send_email"class="btn_to_send_email" type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="layout_send_email">
+
+
+        <!-- <form class="send_email_form" method="post" action="send_email.php">
+            <h3 class="Contact_h3" >Send Message</h3>
+
+            <label for="email_to_send">Email Adress</label>
+            <input name="email_to_send" type="email" required > 
+            <br><br>
+            <label for="message_to_send">Message</label>
+            <textarea required   name="message_to_send" ></textarea>  
+
+
+            <button type="submit"  name="btn_to_send_email" id="btn_to_send_email" class="btn_to_send_email">Submit</button>
+
+
+        </form> -->
+
+      
+
+        <div class="links">
+
+            <a href="https://www.facebook.com/profile.php?id=100003128722409&mibextid=LQQJ4d"><img src="images/facebook-logo.png" alt="facebook-logo"></a> 
+
+            <a href="https://www.instagram.com/khaled7hasan7/?fbclid=IwAR3vHCpHKLOD14C8nwktymileXYeUaSAjea4-Zwdv9qSb8jK619u4lfo3sk"><img src="images/instagram.png" alt="facebook-logo"></a> 
+
+            <a href="https://github.com/khaled7hasan7"><img src="images/gethub-logo.png" alt="facebook-logo"></a>
+
+
+            </div>
+
+
+        <br><br><br><br>
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> 1191494@students.birzeit.edu.com</p>
+        <p><strong>Phone:</strong> +972 52247 8148</p>
+        
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <footer id="footer"></footer>
+
+  
+  <script>
+    fetch('components/header.html')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('header').innerHTML = text;
+      });
+
+    fetch('components/footer.html')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('footer').innerHTML = text;
+      });
+  </script>
+</body>
+</html>

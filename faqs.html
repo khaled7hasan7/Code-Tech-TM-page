@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>FAQs - Programmer Team</title>
+  <style>
+    /* Additional styles for the FAQ page */
+    .faq-section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .faq-section h1 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #007BFF;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-item h2 {
+      font-size: 1.4rem;
+      color: #0056b3;
+      margin: 0;
+    }
+
+    .faq-item p {
+      margin: 0.5rem 0 0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Component -->
+  <header id="header"></header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="faq-section">
+      <h1>Frequently Asked Questions</h1>
+      
+      <div class="faq-item">
+        <h2>What services do you offer?</h2>
+        <p>We provide a range of software development services, including custom software development, web and mobile application development, and machine learning solutions. Please visit our <a href="services.html">Services</a> page for more details.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>How can I get in touch with your team?</h2>
+        <p>You can contact us through our <a href="contact.html">Contact Us</a> page. We offer multiple ways to get in touch, including email, phone, and a contact form.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>Do you provide support after project completion?</h2>
+        <p>Yes, we offer post-project support and maintenance services to ensure that your software continues to function smoothly and meets your evolving needs.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>What is your approach to project management?</h2>
+        <p>We use agile methodologies to manage our projects, ensuring flexibility and responsiveness to client feedback. Our approach includes regular updates, iterative development, and close collaboration with clients.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>How do you ensure the security of our data?</h2>
+        <p>We implement robust security measures, including encryption, secure access controls, and regular security audits, to protect your data and ensure its confidentiality and integrity.</p>
+      </div>
+
+      <!-- Add more FAQ items as needed -->
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer id="footer"></footer>
+
+  <!-- JavaScript to Include Header and Footer -->
+  <script>
+    fetch('components/header.html')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('header').innerHTML = text;
+      });
+
+    fetch('components/footer.html')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('footer').innerHTML = text;
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Privacy Policy - Programmer Team</title>
+  <style>
+    /* Additional styles for the privacy policy page */
+    .privacy-policy {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .privacy-policy h1 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #007BFF;
+    }
+
+    .privacy-policy h2 {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      color: #0056b3;
+    }
+
+    .privacy-policy p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Component -->
+  <header id="header"></header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="privacy-policy">
+      <h1>Privacy Policy</h1>
+      <p>At Programmer Team, we value your privacy and are committed to protecting your personal information. This privacy policy outlines how we collect, use, and safeguard your information.</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>We may collect personal information such as your name, email address, and contact details when you interact with our website or services. This information is used to respond to inquiries and improve our services.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>Your personal information may be used to:</p>
+      <ul>
+        <li>Respond to your inquiries and provide support.</li>
+        <li>Improve our website and services.</li>
+        <li>Send periodic updates and promotional materials (if you have opted in).</li>
+      </ul>
+
+      <h2>3. How We Protect Your Information</h2>
+      <p>We implement a variety of security measures to maintain the safety of your personal information. These measures include encryption, secure servers, and regular security assessments.</p>
+
+      <h2>4. Sharing Your Information</h2>
+      <p>We do not sell, trade, or otherwise transfer your personal information to outside parties without your consent, except as required by law.</p>
+
+      <h2>5. Your Rights</h2>
+      <p>You have the right to access, correct, or delete your personal information. If you wish to exercise these rights or have any questions about our privacy practices, please contact us.</p>
+
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>We may update this privacy policy from time to time. We will notify you of any significant changes by posting the updated policy on our website.</p>
+
+      <h2>7. Contact Us</h2>
+      <p>If you have any questions about this privacy policy or our data practices, please contact us through our <a href="contact.html">Contact Us</a> page.</p>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer id="footer"></footer>
+
+  <!-- JavaScript to Include Header and Footer -->
+  <script>
+    fetch('components/header.html')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('header').innerHTML = text;
+      });
+
+    fetch('components/footer.html')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('footer').innerHTML = text;
+      });
+  </script>
+</body>
+</html>

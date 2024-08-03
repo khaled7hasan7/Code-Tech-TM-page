@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Styles for the services section */
+
+        section{
+
+          max-width: 900px;
+          margin: 2rem auto;
+          padding: 1.5rem;
+          background-color: f4e9df;
+          border-radius: 8px;
+          border: 1px solid #02000094;
+          box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.384);
+          text-align: left;
+        }
+
+
+        /* .services-section {
+          max-width: 900px;
+          margin: 2rem auto;
+          padding: 1.5rem;
+          background-color: f4e9df;
+          border-radius: 8px;
+          border: 1px solid #02000094;
+          box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.384);
+        } */
+    
+        .services-section h1 {
+          margin-bottom: 1.5rem;
+          font-size: 2rem;
+          color: #007BFF;
+        }
+    
+        .services-section p {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          color: #333;
+          margin-bottom: 1.5rem;
+        }
+    
+        .services-section ul {
+          list-style-type: none;
+          padding: 0;
+        }
+    
+        .services-section li {
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #ddd;
+        }
+    
+        .services-section h2 {
+          font-size:22px;
+          color: #0056b3;
+          margin-bottom: 0.5rem;
+        }
+    
+     
+       
+        
+      </style>
+    <title>Services -CodeTech</title>
+</head>
+<body>
+    
+    <header id="header"></header>
+
+    
+    <main>
+
+     
+        <h1>Our Services</h1>
+        <p>At <strong>CodeTech</strong>, we offer a range of professional programming services designed to meet the needs of our clients. Here are some of the key services we provide:</p>
+        
+
+      
+        
+       
+        <!-- <section class="services-section"> -->
+          
+          
+
+
+        <section>
+              <h2>Web Development</h2>
+              <p>We build responsive, user-friendly websites using the latest technologies. Our web development services include:</p>
+              <ul>
+                <li>ASP.NET for robust server-side programming</li>
+                <li>HTML, CSS, and JavaScript for creating dynamic and interactive front-ends</li>
+                <li>PHP for server-side scripting and database interactions</li>
+              </ul>
+        </section>
+            <!-- Web Development -->
+           
+              
+
+
+            <section>
+
+              <!-- Mobile Application Development -->
+              
+                <h2>Mobile Application Development</h2>
+                <p>Our team specializes in creating high-performance mobile apps with a focus on user experience. We utilize:</p>
+                <ul>
+                  <li>Android for native Android app development</li>
+                  <li>Flutter for cross-platform mobile apps with a single codebase</li>
+                </ul>
+             
+            </section>
+
+
+            <section>
+
+              <!-- Desktop Application  -->
+              
+                <h2>Desktop Application Development</h2>
+                <p>We develop robust desktop applications tailored to meet the specific needs of our clients. Our desktop application development services include:</p>
+                <ul>
+                  <li>Using technologies such as JavaFX or WPF for building cross-platform or Windows-specific applications</li>
+                  <li>Creating applications with user-friendly interfaces and efficient performance</li>
+                </ul>
+             
+          </section>
+
+
+
+
+          <section>
+              <!-- Artificial Intelligence -->
+          
+              <h2>Artificial Intelligence</h2>
+              <p>We develop AI-driven solutions that enhance business operations. Our services include machine learning models, natural language processing, and computer vision applications.</p>
+            
+          </section>
+
+
+
+            <section>
+                <h2>Database Administration</h2>
+                <p>We offer comprehensive database administration services to ensure the optimal performance and security of your database systems. Our services include:</p>
+                <ul>
+                  <li>Database design and architecture</li>
+                  <li>Database optimization and performance tuning</li>
+                  <li>Backup and recovery solutions</li>
+                  <li>Security and access control management</li>
+                </ul>
+              
+              </section>
+              
+
+
+              <section>
+                <h2>Consulting and Strategy</h2>
+                <p>Our consulting services provide expert guidance on technology strategies, software architecture, and project management to ensure successful project execution.</p>
+              </section>
+              
+          
+    
+       
+        <!-- </section> -->
+      </main>
+
+
+
+    <footer id="footer"></footer>
+
+    <script>
+        fetch("/Components/header.html").then(Response=>Response.text()).then( text=>{
+            
+            document.getElementById("header").innerHTML=text;
+            })
+
+            fetch("/Components/footer.html").then(Response=>Response.text()).then( text=>{
+            
+            document.getElementById("footer").innerHTML=text;
+            })
+
+
+    </script>
+
+</body>
+</html>

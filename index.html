@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+
+    <style>
+
+    
+
+    .about-section {
+      max-width: 92%;
+      width: 92%;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fafafa;
+      border-radius: 8px;
+      border: 1px solid #000000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-section strong {
+      color: #007BFF;
+    }
+
+    </style>
+</head>
+<body>
+
+
+    <script>
+        fetch('components/header.html')
+          .then(response => response.text())
+          .then(text => {
+            document.getElementById('header').innerHTML = text;
+          });
+    
+        fetch('components/footer.html')
+          .then(response => response.text())
+          .then(text => {
+            document.getElementById('footer').innerHTML = text;
+          });
+      </script>
+
+    <header id="header">
+
+    </header>
+    
+    <nav>
+
+       
+ 
+    </nav>
+
+    <main>
+
+
+        <section>
+            <h1>CodeTech</h1>
+        </section>
+
+        <section class="slider">
+            <div class="slides">
+                <img class="slide" loading="lazy" src="images/curso.jpg" alt="team image">
+                <img class="slide" loading="lazy" src="images/marvin.jpg" alt="team image">
+                <img class="slide" loading="lazy"src="images/istockphoto.jpg" alt="team image">
+            </div>
+            <button  class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </section>
+    
+    
+
+        <section class="about-section ">
+          
+          <p>At <strong>CodeTech</strong>  , we are a dedicated team of skilled programmers passionate about crafting high-quality software solutions.<br> Our expertise spans across various domains, including web development,
+             mobile app development, artificial intelligence, and cloud computing. With years of experience and a commitment to innovation, we have successfully delivered numerous projects that drive business growth
+              and efficiency for our clients. We believe in a collaborative approach, working closely with our clients to understand their unique needs and provide tailored solutions that exceed expectations.
+             Our mission is to leverage cutting-edge technologies to solve complex problems,
+             ensuring that our clients stay ahead in a rapidly evolving digital landscape. Reach out to us to learn how we can transform your ideas into reality.</p>
+          <!-- <p>We are a team of passionate programmers dedicated to developing innovative software solutions. Explore our services, check out our projects, and feel free to get in touch for any inquiries.</p> -->
+          <!-- <p><a href="contact.html" class="cta-button">Contact Us</a></p> -->
+        </section>
+      </main>
+
+
+
+
+      <footer id="footer">
+
+      </footer>
+
+
+      
+
+
+</body>
+</html>
