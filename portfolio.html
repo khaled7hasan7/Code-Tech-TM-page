@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Portfolio - Programmer Team</title>
+  <title>Portfolio - codetech</title>
   <style>
     /* Additional styles for the portfolio page */
     .portfolio {
@@ -15,12 +15,13 @@
     }
 
     .portfolio-item {
-      flex: 1 1 calc(33.333% - 1rem);
+ 
       box-sizing: border-box;
       border: 1px solid #ddd;
       border-radius: 8px;
       overflow: hidden;
       text-align: center;
+      justify-items: center;
     }
 
     .portfolio-item img {
@@ -29,34 +30,12 @@
       display: block;
     }
 
-    .portfolio-item h3 {
-      margin: 0.5rem 0;
-      font-size: 1.2rem;
+    .portfolio-item h3, h2{
+    
       color: #007BFF;
     }
-
-    .portfolio-item p {
-      padding: 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .portfolio-item {
-        flex: 1 1 calc(50% - 1rem);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .portfolio-item {
-        flex: 1 1 100%;
-      }
-    }
-
-    h2{
-
-
-      color: #007BFF;
-    }
+  
+  
   </style>
 </head>
 <body>
@@ -70,9 +49,9 @@
       <p>Explore some of the key projects and accomplishments of our team. Each entry highlights our commitment to quality and innovation in software development.</p>
 
 
-      <section>
+      <section class="portfolio">
       <br><br><br>
-      <div class="portfolio">
+      
         <div class="portfolio-item">
           <img src="images/GA.png" alt="Project 1">
 
@@ -84,7 +63,6 @@
         </div>
    
      
-      </div>
       
     </section>
   </main>

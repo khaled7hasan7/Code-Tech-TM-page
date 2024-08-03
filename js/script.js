@@ -21,10 +21,4 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
 });
 
-
-// function changeBackgroundColor() {
-//     const buttons = document.querySelectorAll('.prev, .next');
-//     buttons.forEach(button => {
-//         button.style.backgroundColor = 'black';
-//     });
-// }
+ 
