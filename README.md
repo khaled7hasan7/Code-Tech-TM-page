@@ -1,4 +1,5 @@
 # Assignment1-Laravel-Cors
  
-![image](https://github.com/user-attachments/assets/ea225df9-8e54-43de-9704-852ef9e8423a)
+![image](https://github.com/user-attachments/assets/b8a7ac77-7deb-4f3d-9dc0-2af3b2998dab)
+
 
