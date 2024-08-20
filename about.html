@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>About Us - CodeTech</title>
     <style>
+      .team-member {
+        display: inline-block;
+        text-align: center;
+        margin: 15px;
+      }
 
+      .team-member img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
 
-        .team-member {
-            display: inline-block;
-            text-align: center;
-            margin: 15px;
-        }
+      .team-member h3 {
+        margin: 10px 0 0;
+      }
 
-        .team-member img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .team-member h3 {
-            margin: 10px 0 0;
-        }
-
-        .team{
-
-            margin: 100px 0 0  ;
-
-        }
- 
+      .team {
+        margin: 100px 0 0;
+      }
     </style>
-   
-</head>
-<body>
-
+  </head>
+  <body>
     <header id="header"></header>
-    <nav id="nav"> </nav>   
+    <nav id="nav"></nav>
     <main>
-        <section>
-          <h1>About Us</h1>
-          <p>Welcome to CodeTech, where we combine technical expertise with innovative solutions. We are a dedicated team of software developers with a passion for creating high-quality, cutting-edge software. Our diverse skill set includes web development, mobile application design, artificial intelligence, and cloud computing.</p>
-    
-          <p>Our team thrives on collaboration and believes in crafting solutions that not only meet but exceed client expectations. We approach every project with a commitment to excellence, ensuring that each software product is reliable, efficient, and tailored to the specific needs of our clients. With a track record of successful projects and satisfied clients, we are excited to continue pushing the boundaries of technology and delivering exceptional results.</p>
-    
-          <p>Thank you for visiting our website. We look forward to the opportunity to work with you and help bring your ideas to life.</p>
-        </section>
-        
-        <section class="team" id="team">
-            <h2>Meet Our Team</h2>
-            <div class="team-member">
-                <img src="images/khaled.png" alt="khaled">
-                <h3>Khaled Omar</h3>
-               
-            </div>
-            <div class="team-member">
-                <img src="images/mohmmad.png" alt="mohammad">
-                <h3>Mohammad Rabaa</h3>
-                
-            </div>
-            <div class="team-member">
-                <img src="images/omar.png" alt="Omar">
-                <h3>Omar Hamed</h3>
-                 
-            </div>
-            
-        </section>
-      </main>
+      <section>
+        <h1>About Us</h1>
+        <p>
+          Welcome to CodeTech, where we combine technical expertise with
+          innovative solutions. We are a dedicated team of software developers
+          with a passion for creating high-quality, cutting-edge software. Our
+          diverse skill set includes web development, mobile application design,
+          artificial intelligence, and cloud computing.
+        </p>
 
-    
+        <p>
+          Our team thrives on collaboration and believes in crafting solutions
+          that not only meet but exceed client expectations. We approach every
+          project with a commitment to excellence, ensuring that each software
+          product is reliable, efficient, and tailored to the specific needs of
+          our clients. With a track record of successful projects and satisfied
+          clients, we are excited to continue pushing the boundaries of
+          technology and delivering exceptional results.
+        </p>
 
-      <footer id="footer"></footer>
+        <p>
+          Thank you for visiting our website. We look forward to the opportunity
+          to work with you and help bring your ideas to life.
+        </p>
+      </section>
 
-      <script>
-        fetch('components/header.html') .then(response => response.text()).then(text => {
+      <section class="team" id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+          <img src="images/khaled.png" alt="khaled" />
+          <h3>Khaled Omar</h3>
+        </div>
+        <div class="team-member">
+          <img src=" " alt="team-member" />
+          <h3>team-member</h3>
+        </div>
+        <div class="team-member">
+          <img src=" " alt="team-member" />
+          <h3>team-member</h3>
+        </div>
+      </section>
+    </main>
 
-            document.getElementById('header').innerHTML = text;
-          });
-    
-        fetch('components/footer.html').then(response => response.text()).then(text => {
-          
-            document.getElementById('footer').innerHTML = text;
-          });
+    <footer id="footer"></footer>
 
-          fetch('components/nav.html')
-          .then(response => response.text())
-          .then(text => {
-            document.getElementById('nav').innerHTML = text;
-          });;
-      </script>
-    
-</body>
+    <script>
+      fetch("components/header.html")
+        .then((response) => response.text())
+        .then((text) => {
+          document.getElementById("header").innerHTML = text;
+        });
+
+      fetch("components/footer.html")
+        .then((response) => response.text())
+        .then((text) => {
+          document.getElementById("footer").innerHTML = text;
+        });
+
+      fetch("components/nav.html")
+        .then((response) => response.text())
+        .then((text) => {
+          document.getElementById("nav").innerHTML = text;
+        });
+    </script>
+  </body>
 </html>
